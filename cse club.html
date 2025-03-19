@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>SBPGC CSE CLUB</title>
+	
+	<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: mintcream;
+}
+.header {
+  background-color: #1e2a47;
+  color: white;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header .container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.nav ul li {
+  margin: 0 20px;
+}
+
+.nav ul li a {
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+  color: #f39c12;
+}
+
+main {
+  width: 90%;
+  margin: 40px auto;
+}
+
+.club-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.club-section:hover {
+  transform: translateY(-10px);
+}
+
+.club-content {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
+.club-image {
+  width: 50%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+}
+
+.it-club-image {
+  background-image: url('https://via.placeholder.com/600x400?text=IT+Club');
+}
+
+.debating-club-image {
+  background-image: url('https://via.placeholder.com/600x400?text=Debating+Club');
+}
+
+.sports-club-image {
+  background-image: url('https://via.placeholder.com/600x400?text=Sports+Club');
+}
+
+.english-club-image {
+  background-image: url('https://via.placeholder.com/600x400?text=English+Club');
+}
+
+.club-info {
+  width: 50%;
+  padding: 20px;
+  color: #2c3e50;
+}
+
+.club-info h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.club-info p {
+  font-size: 16px;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #f39c12;
+  color: white;
+  padding: 12px 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e67e22;
+}
+
+.footer {
+  background-color: #1e2a47;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer p {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .club-content {
+    flex-direction: column;
+  }
+
+  .club-image {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+  }
+
+  .club-info {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    padding-top: 15px;
+  }
+
+  .nav ul li {
+    margin: 10px 0;
+  }
+}
+</style>
+</head>
+
+<body style="color: aliceblue">
+	<header class="header">
+		<div class="container">
+			<h1 class="header-title">Welcome to Our Website</h1>
+			<h3 class="hero" style="animation-timing-function: ease-in">SBPGC CSE CLUB</h3>
+			<nav class="nav">
+				<ul>
+					<li><a href="#it-club">IT Club</a></li>
+					<li><a href="#debating-club">Debating Club</a></li>
+					<li><a href="#sports-club">Sports Club</a></li>
+					<li><a href="#english-club">Spoken English Club</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section id="it-club" class="club-section">
+			<div class="container">
+				<div class="club-content">
+					<div class="club-image it-club-image"><img src="https://t3.ftcdn.net/jpg/10/01/18/76/240_F_1001187613_wb2Z8YTBER0zWsTGpk1yWsLNgNdJLfUV.jpg" alt=""></div>
+					<div class="club-info">
+						<h2>IT Club</h2>
+						<p>Explore the world of technology and innovation. Join workshops and discussions to stay ahead in the tech field.</p>
+						<a href="amin2.html" target="_blank" class="cta-button">Join Now </a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="debating-club" class="club-section">
+			<div class="container">
+				<div class="club-content">
+					<div class="club-image debating-club-image"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/61/Debate_Logo.svg/800px-Debate_Logo.svg.png?20080111211809" height="400px" width="400px" alt=""></div>
+					<div class="club-info">
+						<h2>Debating Club</h2>
+						<p >Enhance your public speaking and argumentative skills by engaging in lively debates on global topics.</p>
+						<a href="#" class="cta-button">Join Now</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="sports-club" class="club-section">
+			<div class="container">
+				<div class="club-content">
+					<div class="club-image sports-club-image"><img src="https://thumbs.dreamstime.com/z/cricket-logo-silhouettes-white-background-design-series-cricket-logo-silhouettes-side-view-white-278634954.jpg?ct=jpeg" height="400px" width="400px" alt=""></div>
+					<div class="club-info">
+						<h2>Sports Club</h2>
+						<p >Get involved in various sports and fitness activities, from team sports to individual training programs.</p>
+						<a href="#" class="cta-button">Join Now</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="english-club" class="club-section">
+			<div class="container">
+				<div class="club-content">
+					<div class="club-image english-club-image"><img src="https://w7.pngwing.com/pngs/413/15/png-transparent-nossi-college-of-art-art-school-the-arts-speaking-english-blue-text-photography-thumbnail.png" height="300px" width="300px" alt=""></div>
+					<div class="club-info">
+						<h2>Spoken English Club</h2>
+						<p >Improve your spoken English skills with fun activities, group discussions, and interactive sessions.</p>
+						<a href="#" class="cta-button">Join Now</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<p>Design by <a href="https://github.com/hackereren" target="_blank" style="color: aliceblue">AMIN</a> <a href="https://github.com/arvin9564" target="_blank" style="color: aliceblue">ARVIN</a> <a href="https://github.com/Fahim570" target="_blank" style="color: aliceblue">FAHIM</a> ❤️</p>
+		</div>
+	</footer>
+
+	<script>
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function(e) {
+				e.preventDefault();
+				document.querySelector(this.getAttribute('href')).scrollIntoView({
+					behavior: 'smooth'
+				});
+			});
+		});
+
+	</script>
+</body>
+
+</html>
